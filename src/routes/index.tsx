@@ -3,15 +3,15 @@ import { createFileRoute } from "@tanstack/react-router";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "BLOQE" },
+      { title: "Bloqe — Compra en grupo, paga menos" },
       {
         name: "description",
-        content: "BLOQE — proyecto en construcción.",
+        content: "Júntate con más personas, compra en grupo y paga menos con Bloqe.",
       },
-      { property: "og:title", content: "BLOQE" },
+      { property: "og:title", content: "Bloqe — Compra en grupo, paga menos" },
       {
         property: "og:description",
-        content: "BLOQE — proyecto en construcción.",
+        content: "Júntate con más personas, compra en grupo y paga menos con Bloqe.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -22,15 +22,10 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-6xl font-bold tracking-[0.3em] text-foreground">
-          BLOQE
-        </h1>
-        <p className="mt-4 text-sm text-muted-foreground">
-          Próximamente
-        </p>
-      </div>
-    </div>
+    <iframe
+      src="/bloqeweb.html"
+      title="Bloqe — Compra en grupo, paga menos"
+      className="block h-screen w-full border-0"
+    />
   );
 }

@@ -1,12 +1,12 @@
-# Bloqe Starter Kit
+# Exact Web View
 
-PROYECTO EN BLANCO PARA BLOQE. NO AGREGUES BACKEND NI LOVABLE CLOUD
+Quiero que me muestres esa web, de forma idéntica
 
 This project was built with [Lovable](https://lovable.dev).
 
 ## Build with Lovable
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/ee2b2feb-ebd5-4331-9c2a-ebe96a0cf7b8).
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/c1a530cc-0d63-4381-b628-476f1de632fd).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
 - **Stay in sync**: every change made in Lovable is committed straight to this repository.
