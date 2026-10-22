@@ -658,5 +658,33 @@
   </div>
 </section>
 
+<script>
+(function () {
+  var POSTHOG_KEY = "phc_xgYohcNewP2dgyMPBVfJD62PPcUpvgEAYxqEhYD42CqB";
+
+  var script = document.createElement("script");
+  script.src = "https://us.i.posthog.com/static/array.js";
+  script.async = true;
+
+  script.onload = function () {
+    if (window.posthog && typeof window.posthog.init === "function") {
+      window.posthog.init(POSTHOG_KEY, {
+        api_host: "https://us.i.posthog.com",
+        person_profiles: "identified_only"
+      });
+
+      window.posthog.capture("bloqe_page_viewed");
+    }
+  };
+
+  script.onerror = function () {
+    console.error("No se pudo cargar el SDK de PostHog.");
+  };
+
+  document.head.appendChild(script);
+})();
+</script>
+
+
 </body>
 </html>
